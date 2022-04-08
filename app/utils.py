@@ -11,3 +11,16 @@ def to_usd(my_price):
     """
 
     return '${:,.2f}'.format(my_price)
+
+
+#if this code is in the global scop of a file we are trying to import from, it will throw errors
+#price = input("Please choose a price like 4.9999")
+
+#print(to_usd(float(price)))
+
+if __name__ == "__main__":
+
+    #if this code is in the global scop of a file we are trying to import from, it will throw errors
+    price = input("Please choose a price like 4.9999")
+
+    print(to_usd(float(price)))
